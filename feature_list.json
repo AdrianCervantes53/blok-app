@@ -1,0 +1,31 @@
+{
+  "project": "blok",
+  "description": "Gestor personal modular (notas, diario, inventario, compras, libros/videos, agenda). Backend compartido, 3 clientes.",
+  "rules": {
+    "one_feature_at_a_time": true,
+    "require_tests_to_close": true,
+    "valid_status": ["pending", "spec_ready", "in_progress", "done", "blocked"]
+  },
+  "features": [
+    {
+      "id": "auth-module",
+      "title": "Autenticación compartida (JWT)",
+      "description": "Login/registro con JWT compartido entre clientes.",
+      "repos": {
+        "api": "done",
+        "web": "done",
+        "android": "pending"
+      }
+    },
+    {
+      "id": "notas-module",
+      "title": "Módulo Notas — validación end-to-end",
+      "description": "Primer módulo completo del patrón backend-compartido. Ver specs/notas-module/ cuando arranque formalmente.",
+      "repos": {
+        "api": "pending",
+        "web": "pending",
+        "android": "pending"
+      }
+    }
+  ]
+}
